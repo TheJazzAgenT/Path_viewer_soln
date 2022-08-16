@@ -31,8 +31,8 @@ Build a User Interface application that allows a user to load and view a CAD geo
 ## Optional Challenge
 Enhance the viewer application by adding the following capabilities...
 - Provide graphical controls for the user to import into or remove .STL and .CSV files from the viewer, after the program is launched.
-- Enable rendering of the CAD geometry in different forms (mesh/triangles, smooth surface, shaded surface, etc.)
-- Allow user to import and display multiple CAD and path files simultaneously.
+- Enable rendering of the CAD geometry in different forms (mesh/triangles, solid surface, shaded surface, etc.)
+- Allow user to import multiple CAD and path files and display them simultaneously.
 - Allow different path files to be displayed in different colors.
 
 ## Submission
