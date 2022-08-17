@@ -29,11 +29,12 @@ Build a User Interface application that allows a user to load and view a CAD geo
 - The developer must think through the process of deploying and using the solution and provide necessary documentation.
 
 ## Optional Challenge
-Enhance the viewer application by adding the following capabilities...
+Enhance the viewer application by adding some or all of the following capabilities...
 - Provide graphical controls for the user to import into or remove .STL and .CSV files from the viewer, after the program is launched.
 - Enable rendering of the CAD geometry in different forms (mesh/triangles, solid surface, shaded surface, etc.)
 - Allow user to import multiple CAD and path files and display them simultaneously.
 - Allow different path files to be displayed in different colors.
+- Add support for importing and displaying other CAD formats besides .STL.
 
 ## Submission
 In order to submit the assignment, do the following:
