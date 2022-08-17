@@ -1,4 +1,4 @@
-# STL_viewer_hw
+# Path_viewer_hw
 ## Context
 At Machina Labs, we use our robots to "form" different shapes (parts) from flat sheets of metal. Typically the parts formed include sections that enable us to manufacture them, but which are not required by our clients. So, at some point, we must "cut out" the desired part from the fully built geometry. Again this is done using our robots, but this time with cutting tools mounted on them. To help us with such tasks, we have built a variety of software tools. 
 
@@ -41,9 +41,9 @@ In order to submit the assignment, do the following:
 
 1. Navigate to GitHub's project import page: [https://github.com/new/import](https://github.com/new/import)
 
-2. In the box titled "Your old repository's clone URL", paste the homework repository's link: [https://github.com/Machina-Labs/STL_viewer_hw](https://github.com/Machina-Labs/STL_viewer_hw)
+2. In the box titled "Your old repository's clone URL", paste the homework repository's link: [https://github.com/Machina-Labs/Path_viewer_hw](https://github.com/Machina-Labs/Path_viewer_hw)
 
-3. In the box titled "Repository Name", add a name for your local homework (ex. `STL_viewer_soln`)
+3. In the box titled "Repository Name", add a name for your local homework (ex. `Path_viewer_soln`)
 
 4. Set privacy level to "Public", then click "Begin Import" button at bottom of the page.
 
