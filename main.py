@@ -8,14 +8,15 @@ from cut_path import CutPath
 from point import Point
 
 
-if __name__=='__main__':
-    @click.command(context_settings=dict(ignore_unknown_options=True))
-
-    test_stl = mesh.Mesh.from_file('part.stl')
+@click.command(context_settings=dict(ignore_unknown_options=True))
+@click.option('--csv_file', help='path to csv file on disk')
+@click.option('--stl_file', help='path to csv file on disk')
+def run(csv_file, stl_file):
+    test_stl = mesh.Mesh.from_file(stl_file)
     scale = test_stl.points.flatten()
     cut_scale = max(scale) - min(scale)
 
-    cut_path = CutPath('cut_path1.csv')
+    cut_path = CutPath(csv_file)
     cut_path.set_scale(cut_scale)
     #cut_path.dump_points()
 
@@ -30,3 +31,6 @@ if __name__=='__main__':
     axes.auto_scale_xyz(scale, scale, scale)
 
     pyplot.show()
+
+if __name__=='__main__':
+    run()

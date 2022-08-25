@@ -137,5 +137,5 @@ class CutPath:
         scale : float
             scale to apply to all coordinates
         """
-        
+
         self.scale = scale
