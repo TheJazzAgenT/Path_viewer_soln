@@ -16,8 +16,9 @@ def run(csv_file, stl_file, cut_color):
     if len(csv_file) != len(stl_file):
         raise Exception("ERROR: Number of cut paths does not match the number of stls")
 
+    # pad the color list with default 'red'
     cut_colors = list(cut_color) + ['red'] * (len(csv_file) - len(cut_color))
-    print(cut_color)
+    
     figure = pyplot.figure()
     axes = mplot3d.Axes3D(figure)
     for csv_f, stl_f, cut_color in zip(csv_file, stl_file, cut_colors):
