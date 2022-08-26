@@ -11,7 +11,7 @@ class Point:
     z : float
         z value
     """
-    
+
     def __init__(self, x, y, z):
         self.x = float(x)
         self.y = float(y)
