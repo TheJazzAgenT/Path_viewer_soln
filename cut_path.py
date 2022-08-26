@@ -127,7 +127,7 @@ class CutPath:
         elif axis == 'z':
             return [pt.z * self.scale for pt in self.points]
         else:
-            print('problem')
+            raise Exception('ERROR: bad axis value (must be [x|y|z])')
 
     def set_scale(self, scale):
         """Set the scale to apply to all coordinates

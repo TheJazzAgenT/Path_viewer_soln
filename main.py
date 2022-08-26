@@ -12,6 +12,8 @@ from point import Point
 @click.option('--csv_file', help='path to csv file on disk', multiple=True)
 @click.option('--stl_file', help='path to csv file on disk', multiple=True)
 def run(csv_file, stl_file):
+    if len(csv_file) != len(stl_file):
+        raise Exception("ERROR: Number of cut paths does not match the number of stls")
     figure = pyplot.figure()
     axes = mplot3d.Axes3D(figure)
     for csv_f, stl_f in zip(csv_file, stl_file):
