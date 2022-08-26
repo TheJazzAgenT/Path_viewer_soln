@@ -28,7 +28,7 @@ class CutPath:
         set the scale for this cut path
     """
 
-    def __init__(self, csv_file=None, scale=1):
+    def __init__(self, csv_file=None, scale=1, color='red'):
         """
         Parameters
         ----------
@@ -36,6 +36,8 @@ class CutPath:
             path to csv file on disk
         scale : float
             scale at which points should be scaled by (default 1)
+        color : str
+            matlab supported color with which to draw this cut path
         """
 
         self.csv_file = csv_file
@@ -43,6 +45,7 @@ class CutPath:
         if self.csv_file is not None:
             self.read_csv()
         self.scale = scale
+        self.color = color
 
     def read_csv(self, csv_file=None):
         """Reads in a csv file if one was not provided in the constructor
